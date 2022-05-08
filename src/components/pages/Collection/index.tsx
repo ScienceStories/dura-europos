@@ -1,35 +1,26 @@
 import React from 'react';
-import { StoriesAPICollection } from 'react-stories-api';
+import { StoriesAPICollectionProps } from 'react-stories-api';
 
-import {
-  STORIES_API_COLLECTION_ID,
-  STORIES_API_ENDPOINT,
-  STORIES_API_PUBLIC_KEY,
-} from '../../../constants';
-import { formatStoryURL } from '../../../utils/url';
-import Footer from '../../layout/Footer';
-import Header from '../../layout/Header';
-import PageTitle from '../../layout/PageTitle';
-import useStyles from './useStyles';
-
-const urlFormatter = formatStoryURL('$id');
+import { searchURL, useQuery } from '../../../utils/url';
+import CollectionContainer from '../../containers/CollectionContainer';
+import AppLayout from '../../layout/AppLayout';
 
 const CollectionPage = () => {
-  const classes = useStyles();
+  const query = useQuery();
+  const updateHistory: StoriesAPICollectionProps['onChange'] = ({ page, q }) => {
+    const newURL = searchURL(undefined, q, page);
+    if (window) {
+      window.history.replaceState({ path: newURL },'', newURL);
+    }
+  };
   return (
-    <>
-      <PageTitle title="Browse Collection" />
-      <Header />
-      <div className={classes.collectionContainer}>
-        <StoriesAPICollection
-          apiKey={STORIES_API_PUBLIC_KEY}
-          endpoint={STORIES_API_ENDPOINT}
-          id={STORIES_API_COLLECTION_ID}
-          urlFormatter={urlFormatter}
-        />
-      </div>
-      <Footer />
-    </>
+    <AppLayout>
+      <CollectionContainer
+        onChange={updateHistory}
+        page={query.get('page') as unknown as number | undefined}
+        q={query.get('q') || ''}
+      />
+    </AppLayout>
   );
 };
 
