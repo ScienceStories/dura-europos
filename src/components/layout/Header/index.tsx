@@ -3,7 +3,11 @@ import React from 'react';
 
 import useStyles from './useStyles';
 
-const Header = () => {
+interface Props {
+  label: string;
+}
+
+const Header = ({ label }: Props) => {
   const classes = useStyles();
   return (
     <section className={classes.root}>
@@ -12,7 +16,7 @@ const Header = () => {
           className={classes.title}
           variant="h4"
         >
-          Browse Collection
+          { label }
         </Typography>
       </div>
     </section>
