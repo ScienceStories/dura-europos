@@ -3,7 +3,7 @@ import { Color } from './constants';
 const theme = {
   palette: {
     primary: {
-      main: Color.Blue,
+      main: Color.DarkGray,
     },
     secondary: {
       main: Color.Orange,

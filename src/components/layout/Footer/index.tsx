@@ -1,7 +1,7 @@
 import { Button, Grid, Typography } from '@material-ui/core';
 import React from 'react';
 
-import { FooterLinks, SCIENCE_STORIES_URL, YDEA_URL } from '../../../constants';
+import { FooterLinks, IDEA_URL, SCIENCE_STORIES_URL } from '../../../constants';
 import useStyles from './useStyles';
 
 const Footer = () => {
@@ -39,24 +39,24 @@ const Footer = () => {
         <Grid
           className={classes.credit}
           item
-          xs={8}
+          xs={10}
         >
           <Typography variant="caption">
             { copyDate }
             <Button
               className={classes.creditBtn}
-              color="primary"
-              href={YDEA_URL}
+              color="secondary"
+              href={IDEA_URL}
               size="small"
               target="_blank"
               variant="text"
             >
-              Yale Digital Dura-Europos Archive
+              International (Digital) Dura-Europos Archive
             </Button>
             in collaboration with
             <Button
               className={classes.creditBtn}
-              color="primary"
+              color="secondary"
               href={SCIENCE_STORIES_URL}
               size="small"
               target="_blank"
