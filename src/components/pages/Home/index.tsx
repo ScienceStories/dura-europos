@@ -2,7 +2,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import React from 'react';
 
-import { APP_NAME } from '../../../constants';
+import { APP_NAME, Images } from '../../../constants';
 import AboutContainer from '../../containers/About';
 import CollectionContainer from '../../containers/CollectionContainer';
 import MapContainer from '../../containers/Map';
@@ -19,6 +19,11 @@ const HomePage = () => {
           item
           xs={12}
         >
+          <img
+            alt={APP_NAME}
+            className={classes.logo}
+            src={Images.idea}
+          />
           <Typography
             className={classes.titleSection}
             color="primary"

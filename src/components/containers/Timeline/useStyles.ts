@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   timelineHeader: {
-    background: theme.palette.primary.main,
+    background: theme.palette.secondary.main,
     padding: theme.spacing(5),
   },
   timelineHeaderText: {

@@ -5,11 +5,22 @@ import { Images } from '../../../constants';
 
 const useStyles = makeStyles((theme) => ({
   container: {
+    alignItems: 'end',
     background: '#bd53196b',
+    display: 'flex',
+    justifyContent: 'space-between',
     textAlign: 'right',
     width: '100%',
     [theme.breakpoints.down('md')]: {
       textAlign: 'center',
+    },
+  },
+  logo: {
+    background: '#f3e8e2',
+    padding: theme.spacing(2),
+    maxHeight: 80,
+    [theme.breakpoints.down('md')]: {
+      display: 'none',
     },
   },
   root: {
