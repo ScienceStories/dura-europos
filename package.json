@@ -5,7 +5,7 @@
   "scripts": {
     "build": "react-scripts --max_old_space_size=4096 build",
     "eject": "react-scripts eject",
-    "start": "PORT=$npm_package_config_port react-scripts start",
+    "start": "HOST=$npm_package_config_host PORT=$npm_package_config_port react-scripts start",
     "test": "react-scripts test"
   },
   "eslintConfig": {
@@ -23,8 +23,9 @@
       "last 1 safari version"
     ]
   },
-  "config": {
-    "port": "5000"
+    "config": {
+	"host": "localhost",	
+	"port": "5000"
   },
   "dependencies": {
     "@material-ui/core": "4.12.3",
