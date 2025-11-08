@@ -1,0 +1,76 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.loading:after {
+  display: inline-block;
+  animation: dotty steps(1,end) 1s infinite;
+  content: '';
+}
+
+@keyframes dotty {
+  0%   { content: ''; }
+  25%  { content: '.'; }
+  50%  { content: '..'; }
+  75%  { content: '...'; }
+  100% { content: ''; }
+}
+
+@font-face {
+  font-family: 'Yale';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Yale/Yale-Roman.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Yale';
+  font-style: normal;
+  font-weight: bold;
+  src: url('/fonts/Yale/Yale-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Yale';
+  font-style: italic;
+  font-weight: bold;
+  src: url('/fonts/Yale/Yale-BoldItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Yale';
+  font-style: italic;
+  font-weight: bold;
+  src: url('/fonts/Yale/Yale-Italic.otf') format('opentype');
+}
+
+
+.fade-section {
+  padding: 16px;
+  margin: 16px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .125);
+  height: 64px;
+  opacity: 0;
+  transform: translate(0, 50%);
+  visibility: hidden;
+  transition: opacity 300ms ease-out, transform 300ms ease-out;
+  will-change: opacity, visibility;
+}
+
+.fade-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+  display: flex; 
+}

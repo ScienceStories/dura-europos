@@ -1,0 +1,35 @@
+[
+  {
+    "content": "\tThe ancient site of Dura-Europos is situated on the western bank of the Euphrates River, not far from the village of Salihiyah in modern Syria. First called “Europos,” the city was founded by the Hellenistic Seleucid Empire around 300 BCE. Later, it was controlled successively by the Parthian Empire (2nd century BCE–late 2nd century CE) and the Roman Empire (from the late 2nd century CE), and known to its inhabitants as “Dura” (“the fortress”) thanks to its role in frontier defense. The hyphenated name is a modern construct that reflects the city’s historical and cultural complexity.",
+    "imageAlt": "Dura-Europos Site",
+    "imageObjectPosition": "left",
+    "imageSrc": "/images/dura-aerial-view.png",
+    "index": 0,
+    "imageSize": 5,
+    "new_tab": true,
+    "title": "A Fortress of History",
+    "url": "https://duraeuroposarchive.org/history/"
+  },
+  {
+    "content": "\tIn the 250s CE, the site was threatened by a series of Sasanian Persian campaigns. Attempting to shore up the city’s defenses in advance of attack, Roman soldiers garrisoned at Dura constructed a massive earthen embankment to reinforce the vulnerable western wall. In a move that would prove fateful for the site’s exceptional archaeological preservation, buildings in the vicinity of the west wall—including a Christian church, a Jewish synagogue, and various pagan temples, as well as parts of the city’s enclosing structures—were depopulated and filled with earth and debris.\n\n\tWhat was at the time a highly destructive process, in fact, created—together with the region’s hot, dry climate—the conditions for the site’s extraordinary degree of preservation. Thanks to these highly unusual circumstances, large sections of rare mural paintings, inscriptions, and hundreds of objects made from organic materials have survived at Dura-Europos. For this reason, the site provides unparalleled glimpses into multicultural, religiously diverse frontier life, as well as the organization of a Roman military garrison where soldiers and civilians coexisted.",
+    "imageAlt": "Dura-Europos Excavation",
+    "imageObjectPosition": "right",
+    "imageSrc": "/images/dura-location-2.png",
+    "index": 1,
+    "imageSize": 4,
+    "new_tab": true,
+    "title": "A Legacy of Multicultural Tapestry",
+    "url": "https://duraeuroposarchive.org/history/"
+  },
+  {
+    "content": "\tWe introduce Dura-Europos Archive Stories, a multimedia application for viewing artifacts and places related to the Dura-Europos archaeological excavation. We describe the process of mapping data to the Wikidata data model, adding data to Wikidata, and then using that data to power an interactive application for viewing images of the artifacts in the context of their metadata. We contextualize this project as an example of using knowledge graphs in research projects to leverage the technologies of the Semantic Web, enabling project-related data to be easily combined with other data available online.",
+    "imageAlt": "Stories App Screenshot",
+    "imageObjectPosition": "center",
+    "imageSrc": "/images/collection-view-screenshot.png",
+    "storyId": "30-w-44",
+    "index": 2,
+    "imageSize": 4,
+    "title": "Dura-Europos Archive Stories: Bridging Past and Present",
+    "url": "/stories"
+  }
+]
