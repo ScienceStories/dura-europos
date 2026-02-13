@@ -10,6 +10,7 @@ import CollectionMap from '../../components/containers/CollectionMap/CollectionM
 import CollectionSection from '../../components/containers/CollectionSection/CollectionSection';
 import TimelineSection from '../../components/containers/TimelineSection/TimelineSection';
 import AppLayout from '../../components/layout/AppLayout/AppLayout';
+import AppDisclaimer from '../../components/presentational/AppDisclaimer/AppDisclaimer';
 import { Images } from '../../constants';
 import styles from './styles';
 
@@ -22,12 +23,14 @@ const baseFadeInProps = {
 
 const HomeView = observer(() => {
   const { t } = useLocale();
+
   return (
     <AppLayout title="Archives">
       <Grid
         container
         sx={styles.root}
       >
+        <AppDisclaimer />
         <Grid size={12}>
           <ParallaxBanner
             layers={[{

@@ -1,5 +1,7 @@
 import { env, envBool } from './utils/envVars';
 
+export const DISCLAIMER_LOCALSTORAGE_KEY = 'appDisclaimerDismissed';
+
 export const {
   STORIES_SERVICES_API_BASE_URL,
   STORIES_SERVICES_API_KEY,
