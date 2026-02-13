@@ -61,9 +61,7 @@ const HomeView = observer(() => {
             color="textSecondary"
             variant="subtitle2"
           >
-            Harnessing the power of Linked Open Data to reassemble
-            and re-contextualize archaeological information related
-            to the important cultural heritage site of Dura-Europos
+            {t('home.tagline')}
           </Typography>
         </Grid>
 

@@ -32,6 +32,12 @@ const styles = {
       p: 1,
     },
   }),
+  localeButton: ({ breakpoints }: Theme) => ({
+    color: 'primary.main',
+    [breakpoints.down('sm')]: {
+      fontSize: '1em',
+    },
+  }),
   navLinks: ({ breakpoints }: Theme) => ({
     '.logo': {
       mx: 2,

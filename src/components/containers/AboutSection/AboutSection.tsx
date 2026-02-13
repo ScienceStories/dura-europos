@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 import { Fragment } from 'react/jsx-runtime';
 import { Else, If, Then } from 'react-if';
 import { ParallaxBanner } from 'react-scroll-parallax';
-import { StoriesAPIButton, useStoriesAPITheme } from 'react-stories-api';
+import { StoriesAPIButton, useLocale, useStoriesAPITheme } from 'react-stories-api';
 
 import aboutTimeline from '../../../data/about-timeline.json';
 import SectionHeaderTitle from '../../presentational/SectionHeaderTitle/SectionHeaderTitle';
@@ -42,6 +42,7 @@ const renderContentContainer = (
   item: AboutTimelineItem,
   includeDelay: boolean,
   shownFirst: boolean,
+  t: ReturnType<typeof useLocale>['t'] = () => '',
 ) => (
   <Grid
     data-aos="fade-up"
@@ -58,13 +59,13 @@ const renderContentContainer = (
         sx={styles.subtitle}
         variant="h3"
       >
-        {item.title}
+        {t(item.title)}
       </Typography>
       <Typography
         sx={styles.description}
         variant="body1"
       >
-        {item.content}
+        {t(item.content)}
       </Typography>
       <StoriesAPIButton
         button={item}
@@ -82,6 +83,7 @@ const renderContentContainer = (
 const isEven = (num: number) => num % 2 === 0;
 
 export default function AboutSection() {
+  const { t } = useLocale();
   const { isMobile } = useStoriesAPITheme();
   const showImageFirst = (index: number) => isMobile || isEven(index);
   const getImageAOS = (index: number) => {
@@ -97,7 +99,7 @@ export default function AboutSection() {
         sx={styles.header}
       >
         <SectionHeaderTitle overline="From 300 BCE to Today">
-          About the Project
+          {t('about.title')}
         </SectionHeaderTitle>
       </Grid>
       <Grid
@@ -115,10 +117,10 @@ export default function AboutSection() {
               <If condition={showImageFirst(index)}>
                 <Then>
                   {renderImageContainer(item, getImageAOS(index), delayAnimations)}
-                  {renderContentContainer(item, delayAnimations, false)}
+                  {renderContentContainer(item, delayAnimations, false, t)}
                 </Then>
                 <Else>
-                  {renderContentContainer(item, delayAnimations, true)}
+                  {renderContentContainer(item, delayAnimations, true, t)}
                   {renderImageContainer(item, getImageAOS(index), delayAnimations)}
                 </Else>
               </If>

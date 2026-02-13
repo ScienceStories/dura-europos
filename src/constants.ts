@@ -48,9 +48,9 @@ export const FooterLinks = [
 ];
 
 export const NavLinks = [
-  { path: `${RoutePaths.Home}#`, title: 'Home' },
-  { path: RoutePaths.Collection, title: 'Explore' },
-  { href: IDEA_ABOUT_URL, title: 'About' },
+  { path: `${RoutePaths.Home}#`, title: 'nav.home' },
+  { path: RoutePaths.Collection, title: 'nav.explore' },
+  { href: IDEA_ABOUT_URL, title: 'nav.about' },
 ];
 
 export const storiesServicesAPIIsEnabled = (

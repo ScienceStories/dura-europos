@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid2';
 import { NavLink, useLocation } from 'react-router-dom';
 import { NavHashLink } from 'react-router-hash-link';
+import { LocaleActionButton, useLocale } from 'react-stories-api';
 
 import { NavLinks } from '../../../constants';
 import HideOnScroll from '../../transitions/HideOnScroll/HideOnScroll';
@@ -20,6 +21,7 @@ const toComponent = (path: string) => {
 
 function AppBar() {
   const location = useLocation();
+  const { t } = useLocale();
   const activeRoute = (path: string) => location.pathname === path;
   const linkClass = (path: string) => (activeRoute(path) ? '--active' : '');
   return (
@@ -58,11 +60,12 @@ function AppBar() {
                   target={href ? '_blank' : null}
                   to={path}
                 >
-                  {title}
+                  {t(title)}
                 </Button>
               ))}
             </div>
           </Grid>
+          <LocaleActionButton id="AppBarLocaleButton" sx={styles.localeButton} />
         </Grid>
       </MuiAppBar>
     </HideOnScroll>
