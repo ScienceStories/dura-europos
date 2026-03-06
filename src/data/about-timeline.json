@@ -1,0 +1,35 @@
+[
+  {
+    "content": "about.timeline.0.content",
+    "imageAlt": "Dura-Europos Site",
+    "imageObjectPosition": "left",
+    "imageSrc": "/images/dura-aerial-view.png",
+    "index": 0,
+    "imageSize": 5,
+    "new_tab": true,
+    "title": "about.timeline.0.title",
+    "url": "https://duraeuroposarchive.org/history/"
+  },
+  {
+    "content": "about.timeline.1.content",
+    "imageAlt": "Dura-Europos Excavation",
+    "imageObjectPosition": "right",
+    "imageSrc": "/images/dura-location-2.png",
+    "index": 1,
+    "imageSize": 4,
+    "new_tab": true,
+    "title": "about.timeline.1.title",
+    "url": "https://duraeuroposarchive.org/history/"
+  },
+  {
+    "content": "about.timeline.2.content",
+    "imageAlt": "Stories App Screenshot",
+    "imageObjectPosition": "center",
+    "imageSrc": "/images/collection-view-screenshot.png",
+    "storyId": "30-w-44",
+    "index": 2,
+    "imageSize": 4,
+    "title": "about.timeline.2.title",
+    "url": "/stories"
+  }
+]
