@@ -1,6 +1,7 @@
 import type { LocalizationConfig } from 'react-stories-api/types';
 
 const localizationConfig: LocalizationConfig = {
+  connectRouter: true,
   defaultLocale: 'en',
   localeSettings: {},
   supportedLocales: ['en', 'ar', 'fr'],
