@@ -20,9 +20,10 @@ const CollectionView = observer(() => {
           key={locale.currentLocale}
           cacheKey="collection-view-{collectionId}"
           collectionId={STORIES_SERVICES_COLLECTION_ID}
-          // connectRouter
+          connectRouter
           layout="tool"
           showLocaleSelector
+          showStoryId
           slots={{
             CollectionHeaderTitle,
           }}

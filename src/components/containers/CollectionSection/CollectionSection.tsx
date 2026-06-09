@@ -16,6 +16,7 @@ const CollectionSection = observer(() => (
         connectRouter
         layout="tool"
         showLocaleSelector
+        showStoryId
       />
     </Grid>
   </Grid>
