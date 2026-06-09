@@ -51,6 +51,7 @@ const StoryView = observer(() => {
           connectRouter
           fullscreen
           showLocaleSelector
+          showStoryId
         />
       </Box>
     </AppLayout>
