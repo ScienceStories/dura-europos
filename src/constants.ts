@@ -12,14 +12,7 @@ export const STORIES_SERVICES_COLLECTION_ID = Number(env.STORIES_SERVICES_COLLEC
 export const STORIES_SERVICES_PROJECT_ID = Number(env.STORIES_SERVICES_PROJECT_ID);
 
 const BARD_URL = 'https://www.bard.edu/';
-export const MAP_URL = 'https://query.wikidata.org/embed.html#%23defaultView%3AMap%7B%20%22'
-  + 'layer%22%3A%20%22%3FsuperclassLabel%22%7D%0A%0A%20%20SELECT%20DISTINCT%20%3FDura_Europos'
-  + '%20%3FDura_EuroposLabel%20%3Fplace%20%3FplaceLabel%20%3Fcoord%20%3Fclass%20%3FclassLabel'
-  + '%20%3FsuperclassLabel%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3Aser'
-  + 'viceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3FDura'
-  + '_Europos%20wdt%3AP189%20%3Fplace.%20%0A%20%20%3Fplace%20wdt%3AP361%20wd%3AQ464266.%0A%'
-  + '20%20%20%20%3Fplace%20wdt%3AP625%20%3Fcoord.%0A%20%20%3FDura_Europos%20wdt%3AP31%20%3Fcl'
-  + 'ass.%0A%20%20%3Fclass%20wdt%3AP279%20%3Fsuperclass.%0A%7D';
+export const MAP_URL = 'https://query.wikidata.org/embed.html#%23defaultView%3AMap%7B%20%22layer%22%3A%20%22%3FsuperclassLabel%22%7D%0A%0A%20%20SELECT%20DISTINCT%20%3FDura_Europos%20%3FDura_EuroposLabel%20%3Fplace%20%3FplaceLabel%20%3Fcoord%20%3Fclass%20%3FclassLabel%20%3FsuperclassLabel%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3FDura_Europos%20wdt%3AP189%20%3Fplace.%20%0A%20%20%3Fplace%20wdt%3AP361%20wd%3AQ464266.%0A%20%20%20%20%3Fplace%20wdt%3AP625%20%3Fcoord.%0A%20%20%3FDura_Europos%20wdt%3AP31%20%3Fclass.%0A%20%20%3Fclass%20wdt%3AP279%20%3Fsuperclass.%0A%7D';
 const IDEA_ABOUT_URL = 'https://duraeuroposarchive.org/about';
 export const IDEA_URL = 'https://duraeuroposarchive.org/';
 export const APP_NAME = 'Dura-Europos Archive Stories';
